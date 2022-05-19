@@ -1,13 +1,5 @@
 # Angabe Milestone 1
 
-Ziel des Milestone 1 (M1) ist es, eine Grundstruktur für das Spiel zu erstellen und der Spielplan auszugeben. Im Rahmen von M1 werden grundlegende Klassen erstellt.
-
-## Feedbackgespräche
-
-- Nach M1 werden Feedbackgspräche stattfinden, im Rahmen derer jedes Team Feedback zum bisherigen Stand des Projekts bekommen kann. Das Feedbackgespräch ist optional aber es wird stark empfohlen, diese Möglichkeit zu nutzen.
-- Push auf das Gitlab Repository des Teams **auf einen Branch namens `feedback`**
-- **Abzugeben bis: 14.05.2022 um 23:59 Uhr**
-
 ## Vorgegebene Klassen
 
 Begonnen werden sollte am besten mit dem Erstellen der Klassen, um eine Grundstruktur für das Spiel festzulegen.
@@ -586,8 +578,6 @@ Card Flip Counter:  42
 ╬═══════════════════════════════════╬═══════════════════════════════════╬═══════════════════════════════════╬
 Possible move: left
 ```
-
->Wichtig: Bitte unbedingt exakt die gleichen Symbole wie in den Beispielen verwenden, da sonst die Test Cases fehlschlagen.
 
 ## Ausgabe des Command-Prompts
 Nach der Ausgabe des Spielplans wird ein Prompt ausgegeben und auf den Input der\*des Spieler\*in gewartet.
