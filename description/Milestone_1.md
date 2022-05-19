@@ -6,7 +6,7 @@ Begonnen werden sollte am besten mit dem Erstellen der Klassen, um eine Grundstr
 
 Die hier angegebenen Klassen können so implementiert werden, wie sie hier beschrieben sind. Es wird empfohlen, die angegebenen Klassen sinnvoll zu erweitern (soweit dies nötig erscheint) sowie weitere Klassen zu erstellen, wo dies sinnvoll ist. Natürlich ist es auch erlaubt, eine andere (objektorientierte) Programmstruktur zu wählen.
 
-> **Achtung:** Es muss eine geeignete Ableitungshierarchie (Klassen mit Vererbung) implementiert werden, da das Anwenden von Vererbung ein zentrales Lernziel der KU ist. Eine Lösung ohne einer selbst geschriebenen Basisklasse und davon abgeleiteten Klassen wird daher als Spezifikationsverstoß gewertet. Ein Beispiel dafür, wo Vererbung genutzt werden könnte, ist die Klasse [Tile](#klasse-tile).
+Ein Beispiel dafür, wo Vererbung genutzt werden könnte, ist die Klasse [Tile](#klasse-tile).
 
 Wenn in den folgenden Ausführungen kein Datentyp vorgegeben ist, soll eigenständig ein passender Datentyp gewählt werden. 
 
