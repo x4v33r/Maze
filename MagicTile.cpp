@@ -1,6 +1,8 @@
 #include "Tile.hpp"
 #include "MagicTile.hpp"
 
+#include <iostream> //danach löschen
+
 //------------------------------------------------------------------------------
 // This is the constructor of the class MagicTile. Depending on the information 
 // from the RoomInfo class, the MagicTile is initialized.
@@ -80,9 +82,10 @@ MagicTile::MagicTile(char roominfo)
 
 
 //-------------------------------------------------------------------------
-// This method returns the attribute of class MagicTile
+// This method is a "getter" of the class MagicTile. It returns the strings
+// to be printed as game board.
 //
-// @return returns the current attribute
+// @return magic_chars_ - returns the current attribute
 
 std::vector<std::string>& MagicTile::getTileString() //const
 {
@@ -94,6 +97,8 @@ std::vector<std::string>& MagicTile::getTileString() //const
 // This method changes the Tile into a 'Passage' after magic was used (e.g. by
 // fighting a monster, or opening a door.)
 //
+// @ return - no returnvalue
+
 void MagicTile::magicUsed() //eventuell ein anderer Übergabeparameter, der die Info über benutzte Magie beinhaltet
 {
   for(int counter = 0; counter < 3; counter ++)

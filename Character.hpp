@@ -2,6 +2,7 @@
 #define CHARACTER_HPP
 
 #include <string>
+#include <vector>
 
 enum character_classes
 {
@@ -17,8 +18,7 @@ public:
 
   char getSymbol() const;
   std::pair<int, int> getCoordinates();
-
-  void set_coordinates(std::pair<int, int> global_coordinates);
+  void setCoordinates(std::pair<int, int> global_coordinates);
 
 private:
   character_classes type_;

@@ -11,7 +11,7 @@
 #include <vector>
 #include <string>
 
-#include "GameLoop.hpp"
+#include "Game.hpp"
 #include "RoomInfo.hpp"
 #include "Room.hpp"
 #include "BasicTile.hpp"
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     }
 
     Utils::parseFile(room_layout);
-    game_board.create_game_board(room_layout);
+    game_board.createGameBoard(room_layout);
   }
   catch(ParseException& exception)
   {
@@ -58,9 +58,12 @@ int main(int argc, char *argv[])
     return 2;
   }
 
-  GameLoop &game = GameLoop::instance();
+// Here the gameloop starts. 
 
-  game.printGameBoard(game_board);
+  Game &game = Game::instance();
+  game.startGame(game_board);
+
+
 
   return 0;
 }

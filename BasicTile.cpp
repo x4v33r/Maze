@@ -36,7 +36,6 @@ BasicTile::BasicTile(char roominfo)
       basic_chars_.push_back("       ");
     }
   }
-  //
 }
 
 

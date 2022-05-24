@@ -1,3 +1,4 @@
+
 #ifndef ROOM_HPP
 #define ROOM_HPP
 
@@ -22,6 +23,7 @@ public:
 
   void SetRoom(bool revealed);
   void setPlayerToTile(std::shared_ptr<Character> character, std::pair<int, int> lokal_coordinates);
+  char getPlayer(std::pair<int, int> lokal_coordinates);
 
 private:
   char room_id_;
@@ -31,5 +33,6 @@ private:
   std::pair<int, int> global_coordinates_;
 
 };
+
 
 #endif

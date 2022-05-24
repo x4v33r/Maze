@@ -10,13 +10,12 @@ class BasicTile : public Tile
 
   public:
     BasicTile(char roominfo); //Konstruktor
+
     BasicTile(const BasicTile&) = delete; //brauchen wir den copy-Konstruktor?
     ~BasicTile() = default; //achtung bei Memory Allokierung bitte ändern
 
     std::vector<std::string>& getTileString() override; //simple getter
-
+    
 };
-
-//Info: Tile Type Unbekanntes Feld fehlt! 
 
 #endif
