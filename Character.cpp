@@ -1,20 +1,10 @@
 #include "Character.hpp"
 
-char Character::getSymbol() const
-{
-  return type_;
-}
-
-std::pair<int, int> Character::getCoordinates()
-{
-  return coordinates_;
-}
-
-void Character::set_coordinates(std::pair<int, int> global_coordinates)
-{
-  coordinates_.first = global_coordinates.first;
-  coordinates_.second = global_coordinates.second;
-}
+//-------------------------------------------------------------------------
+// This is the constructor of the Character class. It sets the character
+// to the respective char
+//
+// @ return - no returnvalue
 
 Character::Character(char type)
 {
@@ -31,3 +21,41 @@ Character::Character(char type)
     type_ = seer_;
   }
 }
+
+
+//-------------------------------------------------------------------------
+// This Method returns the enum of the respective character as char
+//
+// @ return - the enum of the repective character as char 
+
+char Character::getSymbol() const
+{
+  return type_;
+}
+
+
+//-------------------------------------------------------------------------
+// This Method finds out the exact position of one character
+//
+// @ return - the coordinates in form of a std::pair of integer 
+
+std::pair<int, int> Character::getCoordinates()
+{
+  return coordinates_;
+}
+
+
+//-------------------------------------------------------------------------
+// This Method sets the coordinates of the respective character 
+//
+// @ return - no returnvalue
+
+void Character::setCoordinates(std::pair<int, int> global_coordinates)
+{
+  coordinates_.first = global_coordinates.first;
+  coordinates_.second = global_coordinates.second;
+}
+
+
+
+
